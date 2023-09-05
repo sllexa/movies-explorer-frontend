@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+.footer_hidden {
+  display: none;
+}
+
 .footer__text {
   font-size: 13px;
   line-height: normal;
@@ -23,6 +27,7 @@
 .footer__copy {
   font-size: 13px;
   line-height: normal;
+  margin: 0;
 }
 
 .footer__links-list {
@@ -49,32 +54,33 @@
 @media (max-width: 767px) {
   .footer__text {
     font-size: 12px;
-    line-height: 15px;
+    line-height: normal;
     padding-bottom: 21px;
   }
 
   .footer__container {
     flex-direction: column-reverse;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 27px;
   }
 
   .footer__links-list {
     margin: 0;
-    gap: 12px;
+    gap: 8px;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
   }
 
   .footer__copy {
     margin-top: 30px;
     color: var(--gray-text);
     font-size: 12px;
-    line-height: 15px;
+    line-height: normal;
   }
 
   .footer__link {
     font-size: 12px;
-    line-height: 15px;
+    line-height: normal;
   }
 }

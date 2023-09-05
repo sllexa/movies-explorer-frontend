@@ -104,17 +104,17 @@
   .about-project__time {
     margin-top: 60px;
     grid-template-columns: 1fr 1.84fr;
+    gap: 10px 0;
   }
 
   .about-project__time-side {
-    margin-top: 10px;
     font-weight: 400;
     font-size: 11px;
-    line-height: 13px;
+    line-height: normal;
   }
 
   .about-project__time-header {
     font-size: 11px;
-    line-height: 13px;
+    line-height: normal;
   }
 }

@@ -8,15 +8,19 @@ import NavAuth from '../NavAuth/NavAuth';
 const Header = ({ loggedIn }) => {
   const path = useLocation().pathname;
 
+  const classLocal = path === '/' ? 'header_type_landing' 
+  : path === "/movies" || path === "/saved-movies" || path === '/profile'
+  ? '' : 'header_hidden';
+
   return (
-    <heaer className={`header ${path === '/' ? 'header_type_landing' : ''}`}>
+    <header className={"header " + classLocal}>
       <div className="container">
         <div className="header__container">
           <Logo />
           {!loggedIn ? <NavAuth /> : <Navigation path={path} />}
         </div>
       </div>
-    </heaer>
+    </header>
   );
 }
 

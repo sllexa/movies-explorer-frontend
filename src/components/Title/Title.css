@@ -5,13 +5,15 @@
   letter-spacing: -0.88px;
   padding-bottom: 23px;
   border-bottom: 1px solid var(--gray-title);
-  margin: 0;
+  margin: 1px 0 0;
 }
 
 @media (max-width: 767px) {
   .title {
     font-size: 18px;
-    line-height: 22px;
+    line-height: normal;
+    letter-spacing: -0.72px;
     padding-bottom: 28px;
+    margin: 0;
   }
 }

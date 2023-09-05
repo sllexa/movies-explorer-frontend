@@ -25,7 +25,7 @@
   --red: #EE3465;
   --blue: #4285F4;
 
-  --font-family: 'Inter', sans-serif;
+  --font-family: 'Inter', Arial, Helvetica, sans-serif;
 }
 
 @media (max-width: 1023px) {

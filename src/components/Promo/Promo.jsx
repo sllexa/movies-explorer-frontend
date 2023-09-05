@@ -1,5 +1,5 @@
 import './Promo.css';
-import promo from '../../images/promo-image.svg';
+import promo from '../../images/promo-image.png';
 
 const Promo = () => {
   return (
@@ -7,7 +7,7 @@ const Promo = () => {
       <div className="container">
         <div className="promo__container">
           <div>
-            <h1 className="promo__title">Учебный проект студента факультета Веб-разработки.</h1>
+            <h1 className="promo__title">Учебный проект студента факультета Веб&zwj;-&zwj;разработки.</h1>
             <p className="promo__text">Листайте ниже, чтобы узнать больше про этот проект и его создателя.</p>
             <a href="#about-project" className="promo__button">Узнать больше</a>
           </div>

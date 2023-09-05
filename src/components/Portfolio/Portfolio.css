@@ -35,17 +35,27 @@
   display: block;
   font-weight: 400;
   font-size: 30px;
-  line-height: 167%;
+  line-height: 1.67;
   letter-spacing: -0.04em;
-  cursor: pointer;
+  position: relative;
   transition: opacity 0.5s linear;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .portfolio__link:hover {
-  opacity: 0.6;
+  opacity: 0.7;
+}
+
+.portfolio__link::after {
+  content: '';
+  width: 24px;
+  height: 18px;
+  background-image: url('../../images/arrow.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 @media (max-width: 1023px) {
@@ -76,5 +86,10 @@
   .portfolio__link {
     font-size: 18px;
     line-height: 28px;
+  }
+
+  .portfolio__link::after {
+    width: 16px;
+    height: 11px;
   }
 }

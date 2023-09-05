@@ -1,5 +1,5 @@
 .search-form {
-  padding: 70px 4px 43px;
+  padding: 70px 0 43px;
   border-bottom: 1px solid rgba(170, 170, 170, 0.2);
   margin-bottom: 10px;
 }
@@ -21,6 +21,7 @@
   line-height: 1.11;
   background-color: var(--gray-bg);
   color: var(--gray-text);
+  outline: none;
 }
 
 .search-form__input::placeholder {
@@ -28,6 +29,10 @@
   font-size: 18px;
   line-height: 1.11;
   color: var(--gray-text);
+}
+
+.search-form__input:focus {
+  outline: 1px solid var(--gray-border);
 }
 
 .search-form__button {
@@ -104,6 +109,7 @@
   .search-form__button {
     width: 80px;
     height: 44px;
+    padding: 13px 10px;
   }
 
   .search-form__short-films-text {

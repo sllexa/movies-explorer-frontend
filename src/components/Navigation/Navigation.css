@@ -89,7 +89,14 @@
   font-weight: 500;
 }
 
+.navigation__item_type_mobile {
+  display: none;
+}
+
 @media screen and (max-width: 800px) {
+  .navigation__item_type_mobile {
+    display: block;
+  }
   .navigation__link_active {
     font-weight: 400;
     padding-bottom: 8px;
