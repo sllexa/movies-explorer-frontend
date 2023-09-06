@@ -27,7 +27,7 @@ const AuthPage = ({ children, type, onSubmit, isValid }) => {
 
   return (
     <main className="auth">
-      <div className="auth__wrapper">
+      <section className="auth__wrapper">
         <Logo />
         <h1 className="auth__title">{texts.title}</h1>
         <form className="auth__form" name={type} onSubmit={handleSubmit}>
@@ -47,7 +47,7 @@ const AuthPage = ({ children, type, onSubmit, isValid }) => {
           </span>
           <Link className="auth__link" to={texts.linkPath}>{texts.linkText}</Link>
         </div>
-      </div>
+      </section>
     </main>
   );
 }

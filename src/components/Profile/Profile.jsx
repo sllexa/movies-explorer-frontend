@@ -29,7 +29,7 @@ const Profile = () => {
   }
   return (
     <main className='profile'>
-      <div className='profile__inner'>
+      <section className='profile__inner'>
         <h1 className="profile__title">Привет, Виталий!</h1>
         <form className="profile__form" name="profile-form" noValidate onSubmit={handleProfileSubmit}>
           <fieldset className='profile__form-fields'>
@@ -89,7 +89,7 @@ const Profile = () => {
             )}
           </div>
         </form>
-      </div>
+      </section>
     </main>
   );
 }

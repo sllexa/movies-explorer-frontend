@@ -7,7 +7,7 @@
   grid-template-columns: repeat(auto-fit, 360px);
   column-gap: 28px;
   row-gap: 32px;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .cards__button-container {

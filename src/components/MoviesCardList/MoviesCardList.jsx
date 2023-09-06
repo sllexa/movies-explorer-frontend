@@ -14,7 +14,7 @@ const MoviesCardList = ({ movies }) => {
   };
 
   return (
-    <section className="cards">
+    <section className="cards" aria-label="Список карточек">
       <div className="cards__grid">
         {movies.map((card) => (
           <MoviesCard key={card.id} card={card} />
