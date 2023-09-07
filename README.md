@@ -1,1 +1,3 @@
-# movies-explorer-frontend
+# ***Проект Movies-explorer (фронтенд)***
+
+* Дизайн макета - `dark-4`

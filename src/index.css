@@ -1,0 +1,41 @@
+@import url(./vendor/fonts/fonts.css);
+@import url(./vendor/normalize.css);
+
+.container {
+  padding: 0 70px;
+  max-width: 1280px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --dark-blue: #073042;
+  --green: #3DDC84;
+  --blue-account: #0F4157;
+  --gray-account: #313131;
+  --gray-bg: #202020;
+  --gray: #272727;
+  --gray-light: #303030;
+  --gray-title: #dadada;
+  --gray-text: #8B8B8B;
+  --gray-form: #aaa;
+  --gray-border: #424242;
+  --red: #EE3465;
+  --blue: #4285F4;
+
+  --font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 1023px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 10px;
+  }
+}
