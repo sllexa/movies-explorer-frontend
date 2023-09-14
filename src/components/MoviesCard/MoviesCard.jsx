@@ -12,24 +12,24 @@ const MoviesCard = ({ card }) => {
   };
 
   return (
-      <article className="card">
-        <div className="card__description">
-          <h3 className="card__title">{card.title}</h3>
-          <p className="card__duration">{card.duration}</p>
-        </div>
-        <img className="card__poster" src={card.image} alt={card.title} />
+    <article className="card">
+      <div className="card__description">
+        <h3 className="card__title">{card.title}</h3>
+        <p className="card__duration">{card.duration}</p>
+      </div>
+      <img className="card__poster" src={card.image} alt={card.title} />
 
-        {path === '/movies' ?
-          !isCardSaved ? (
-            <button type="button" className="card__button card__button_type_save" onClick={handleOnClick}>
-              Сохранить
-            </button>
-          ) : (
-            <button type="button" className="card__button card__button_type_saved" onClick={handleOnClick}/>
+      {path === '/movies' ?
+        !isCardSaved ? (
+          <button type="button" className="card__button card__button_type_save" onClick={handleOnClick}>
+            Сохранить
+          </button>
+        ) : (
+          <button type="button" className="card__button card__button_type_saved" onClick={handleOnClick} />
         ) : (
           <button type="button" className="card__button card__button_type_unsave" />
         )}
-      </article>
+    </article>
   );
 }
 

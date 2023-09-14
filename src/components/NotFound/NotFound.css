@@ -34,6 +34,23 @@
   padding-bottom: 60px;
 }
 
+.not-found__button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  color: var(--blue);
+  padding: 0;
+  align-self: center;
+  transition: all .3s ease;
+}
+
+.not-found__button:hover {
+  opacity: .8;
+}
+
 .not-found__link {
   width: fit-content;
   align-self: center;
@@ -55,7 +72,7 @@
     padding: 408px 0 222px;
   }
 
-  .not-found__link {
+  .not-found__button {
     margin-top: 184px;
   }
 }
@@ -76,7 +93,7 @@
     line-height: normal;
   }
 
-  .not-found__link {
+  .not-found__button {
     font-size: 12px;
     line-height: normal;
     margin-top: 284px;

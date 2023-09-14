@@ -23,6 +23,7 @@
   background-color: transparent;
   cursor: not-allowed;
   outline: 1px solid #8b8b8b;
+  color: var(--gray-text);
 }
 
 .form-button:disabled:active {
