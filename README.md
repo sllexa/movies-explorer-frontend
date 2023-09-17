@@ -53,3 +53,4 @@
 * Ссылка на API (все фильмы) [https://api.nomoreparties.co/beatfilm-movies](https://api.nomoreparties.co/beatfilm-movies)
 * Публичный IP адрес сервера `158.160.32.180`
 * Дизайн макета - `dark-4`
+* Ссылка на Pull request [https://github.com/sllexa/movies-explorer-frontend/pull/2](https://github.com/sllexa/movies-explorer-frontend/pull/2)
