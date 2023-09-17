@@ -5,7 +5,7 @@
   padding: 10px;
   position: fixed;
   top: -100%;
-  transform: translateX(-100%);
+  transform: translateX(-50%);
   border-radius: 5px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, .5);
   font-size: 12px;
@@ -13,7 +13,11 @@
 }
 
 .popup_visible {
-  transform: translateX(0%);
+  transform: translateX(-50%);
   top: 50px;
-  left: 10px;
+  left: 50%;
+}
+
+.popup_success {
+  background-color: var(--green);
 }

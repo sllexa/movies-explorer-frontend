@@ -1,4 +1,4 @@
-// import { BASE_URL } from './constants';
+import { BASE_URL } from './constants';
 
 class MainApi {
   constructor({ url, headers }) {
@@ -71,19 +71,7 @@ class MainApi {
       method: 'POST',
       credentials: 'include',
       headers: this._headers,
-      body: JSON.stringify({
-        country: data.country,
-        director: data.director,
-        duration: data.duration,
-        year: data.year,
-        description: data.description,
-        image: 'https://api.nomoreparties.co' + data.image.url,
-        trailerLink: data.trailerLink,
-        thumbnail: 'https://api.nomoreparties.co' + data.image.formats.thumbnail.url,
-        movieId: data.id,
-        nameRU: data.nameRU,
-        nameEN: data.nameEN,
-      })
+      body: JSON.stringify(data)
     });
   }
 
@@ -97,8 +85,8 @@ class MainApi {
 }
 
 const mainApi = new MainApi({
-  // url: BASE_URL,
-  url: 'http://localhost:4000',
+  url: BASE_URL,
+  // url: 'http://localhost:4000',
   headers: {
     "Content-Type": "application/json"
   }

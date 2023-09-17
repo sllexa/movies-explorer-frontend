@@ -1,9 +1,9 @@
 import './Popup.css';
 
-const Popup = ({ children, isPopupOpen }) => {
+const Popup = ({ isError = true, isPopupOpen, message }) => {
   return (
-    <div className={`popup ${isPopupOpen && 'popup_visible'}`}>
-      {children}
+    <div className={`popup ${isPopupOpen && 'popup_visible'} ${!isError && 'popup_success'}`}>
+      {message}
     </div>
   )
 }
