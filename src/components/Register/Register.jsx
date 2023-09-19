@@ -2,13 +2,13 @@ import AuthPage from '../AuthPage/AuthPage';
 import './Register.css';
 import useFormValidation from '../../hooks/useFormValidation';
 import FormInput from '../FormInput/FormInput';
-import { EMAIL_PATTERN } from '../../utils/constants';
+import { USER_NAME_PATTERN } from '../../utils/constants';
 
-const Register = () => {
+const Register = ({ onSubmit, error, isLoader }) => {
   const { values, errors, isValid, handleChange } = useFormValidation();
 
-  function handleSubmit() {
-    // onSubmit(values);
+  const handleSubmit = () => {
+    onSubmit(values);
   } 
     
   return (
@@ -16,7 +16,8 @@ const Register = () => {
       type={'register'}
       isValid={isValid}
       onSubmit={handleSubmit}
-      // error={error}
+      error={error}
+      isLoader={isLoader}
     >
       <FormInput
         value={values.name}
@@ -25,6 +26,7 @@ const Register = () => {
         name='name'
         title='Имя'
         type='text'
+        pattern={USER_NAME_PATTERN}
         required
         minLength={3}
       />
@@ -35,7 +37,7 @@ const Register = () => {
         name='email'
         title='E-mail'
         type='email'
-        pattern={EMAIL_PATTERN}
+        pattern='^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$'
         required
       />
       <FormInput
