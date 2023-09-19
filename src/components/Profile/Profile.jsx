@@ -2,7 +2,7 @@ import './Profile.css';
 import { useContext, useState, useEffect } from 'react';
 import CurrentUserContext from '../../contexts/CurrentUserContext';
 import useFormValidation from '../../hooks/useFormValidation';
-import { EMAIL_PATTERN, USER_NAME_PATTERN } from '../../utils/constants';
+import { USER_NAME_PATTERN } from '../../utils/constants';
 
 const Profile = ({ logout, onSubmit, error, successMessage, isLoader }) => {
   const currentUser = useContext(CurrentUserContext);
@@ -58,7 +58,7 @@ const Profile = ({ logout, onSubmit, error, successMessage, isLoader }) => {
                 placeholder="Email"
                 value={values.email || ''}
                 onChange={handleChange}
-                pattern={EMAIL_PATTERN}
+                pattern='^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$'
                 disabled={!inEditMode}
                 required
               />
